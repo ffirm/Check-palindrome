@@ -1,0 +1,9 @@
+// check palindrome
+
+var x = prompt("Enter a palindrome : ");
+var y = Array.from(String(x), Number);
+for (var i = 0; i < Math.floor(y.length/2); i++){
+    if (y[i] === y[y.length - 1- i]){
+    console.log("True");
+    } else console.log("False");
+}
